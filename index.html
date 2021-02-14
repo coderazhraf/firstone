@@ -7,7 +7,72 @@
     <title>Ahmed</title>
     <link rel="stylesheet" href="./assest/style.css">
 </head>
-<body>
-    <h1>Ahmed</h1>
+        
+    <body>
+    
+        <div class="header">
+            <div class="nav">
+                <span onclick="myf()">&#9776</span>
+                <ul id="menu">
+                    <li>Home</li>
+                    <li>News</li>
+                    <li>Health</li>
+                    <li>Sport</li>
+                    <li id="btn">More
+                        <i class='fas fa-angle-down'></i>
+                        <ul class="ahmed">
+                        jkl
+                        </ul>
+                    
+                    </li>
+                    <li>Contect</li>
+                </ul>
+            
+            </div>
+        
+        </div>
+        <button>hallo</button>
+        <div class="hooyo">jk</div>
+        <script>
+            
+            let hllo = document.getElementById("btn");
+         hllo.addEventListener("click", function() {
+         let woow = document.querySelector(".ahmed");
+             
+             woow.classList.toggle("newClassName");
+         
+         })
+             
+             
+             
+             let ow = document.querySelector("button")
+             
+          
+            
+            ow.addEventListener("click", function(){
+            let vv = this.nextElementSibling;
+          if(  vv.style.maxHeight == "50%"){
+            vv.style.maxHeight = "0"
+          }else{
+            vv.style.maxHeight = "50%"
+          }
+            })
+            
+        function myf(){
+          let ahmed = document.getElementById("menu");
+            
+            if(ahmed.style.display == "block"){
+                ahmed.style.display = "none"
+            }else{
+            ahmed.style.display = "block"
+            }
+        }
+        
+        </script>
+    
+    </body>
+        
+        
+        </html>
 </body>
 </html>
